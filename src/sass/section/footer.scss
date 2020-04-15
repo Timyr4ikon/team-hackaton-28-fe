@@ -1,0 +1,254 @@
+
+
+.footer{
+    margin: 0 auto;
+    background-image: url(../images/img/bcg_footer@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 600px;
+    height: 978px;
+    
+
+    &__title{
+        margin-top: 50px;
+        margin-bottom: 36px;
+        color: $white-color;
+        font-size: 18px;
+        @media (min-width:1200px){
+            font-size: 28px;
+        }
+    }
+    &__form{
+        margin: 0 auto;
+        width: 270px;
+        margin-bottom: 52px;
+    }
+    &__name{
+        width: 100%;
+        @extend %input;
+        margin-bottom: 24px;
+       
+
+    }
+    &__email{
+        width: 100%;
+        @extend %input;
+        margin-bottom: 24px;
+        &:valid{
+            border: 1px solid green;
+        }
+        &:invalid{
+            border: 3px solid red;
+        }
+
+    }
+    &__area{
+        width: 100%;
+        height: 175px;
+        max-height: 175px;
+        border-radius: 3px;
+        padding-left: 20px;
+        padding-top: 15px;
+        margin-bottom: 44px;
+    }
+    &__btn{
+        display: block;
+        width: 170px;
+        height: 50px;
+border-radius: 8px;
+        background-color: $turquoise-color;
+        border: none;
+        text-transform: uppercase;
+        color: $white-color;
+        font-size: 22px;
+        margin: 0 auto;
+        border: none;
+transition: all 0.4s ease 0s;   
+        &:hover{
+            background-color: #000;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+
+transition: all 0.4s ease 0s;
+        }
+    }
+    &__contact{
+        text-align: center;
+    }
+    &__get{
+        font-size: 24px;
+        line-height: 24px;
+        color: $white-color;
+        font-family: "Raleway";
+        font-weight: 400;
+        padding-bottom: 16px;
+    }
+    &__nunc{
+        font-size: 14px;
+        line-height: 21px;
+        color: $grey1-color;
+        font-family: "Open Sans";
+        font-weight: 400;
+        margin-bottom: 38px;
+    }
+    &__link{
+        display: block;
+        color: #bface2;
+        text-decoration: none;
+        &:hover{
+            color: inherit;
+        }
+    }
+    &__icons{
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 36px;
+    }
+    &__icon{
+        @extend %footer__icon;
+
+        &--facebook{
+            background-color: #3b5997;
+
+        }
+        &--twitter{
+            background-color: #3ec2f3;
+
+        }
+        &--in{
+            background-color: #007ab9;            
+        }
+        
+        &-facebook{
+           @extend %icon;
+        }
+        &-twitter{
+            @extend %icon;
+        }
+        &-in{
+            @extend %icon;
+        }
+        &:hover{
+            background-color: purple;
+            transform: rotate(36000000000000000deg);
+            transition-duration: 0.2s;
+        }
+    }
+    &__contacts{
+
+        &-link{
+            font-size: 14px;
+            line-height: 24px;
+            color: #bface2;
+            font-family: "Open Sans";
+            font-weight: 700;
+        }
+    }
+    &__line{
+        height: 2px;
+        background-color:  #bface2;
+        margin-top: 44px;
+        transform: rotate(0.1deg);
+        &-spans{
+            margin-top: 20px;
+            transform: rotate(-0.1deg);
+        }
+        &-span{
+            display: block;
+            font-size: 14px;
+            line-height: 21px;
+            color: $grey4-color;
+            font-family: "Open Sans";
+            font-weight: 400;
+           
+        }
+    }
+
+}
+
+
+@media (min-width:1200px){
+    
+    .footer{
+        min-width: 1160px;
+        max-width:100%;
+       
+        height: 600px;
+        &__title{
+            margin-top: 60px;
+            margin-bottom: 44px;
+        }
+        &__contact{
+            width: 428px;
+            text-align: left;
+            margin-left: -15px;
+        }
+        &__get{
+            padding-bottom: 12px;
+        }
+        &__nunc{
+            margin-bottom: 36px;
+        }
+        &__icons{
+            margin-left: 0;
+            margin-bottom: 24px;
+        }
+
+        &__form{
+            width: 570px;
+           margin-left: -18px;
+        }
+        &__name{
+            width: 270px;
+
+        }
+        &__email{
+            width: 270px;
+            margin-left: 25px;
+        }
+        &__area{
+            margin-bottom: 38px;
+        }
+        &__btn{
+            margin-right: 4px;
+        }
+        &__line{
+            margin-top: 18px;
+            &-span{
+                display: inline-block;
+            }
+        }
+
+    }
+}
+
+
+%input{
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    color: $grey4-color;
+    padding-left: 20px;
+}
+%footer__icon{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+%icon{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    fill:$white-color;
+}
+
+@media (min-width:1150px) and (max-width:1199px){
+    .container{
+        width: 320px;
+        max-width: 320px;
+    }
+}

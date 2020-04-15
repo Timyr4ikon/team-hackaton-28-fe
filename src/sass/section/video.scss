@@ -1,0 +1,173 @@
+.video
+{
+    background: linear-gradient(to right,#0cebeb,#20e3b2, #29ffc6);
+
+    padding-top: 70px;
+    margin: 0 auto;
+
+}
+.video__icon{
+    width: 34px;
+    height: 34px;
+    fill: #ffffff;
+    margin:18px;
+    
+}
+.video__header
+{
+color: $maintext-color; /* text color */
+font-family: "Raleway";
+@include font-settings (28px, 18px);
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 23px;
+}
+.video__desc
+{
+    color: $white-color;
+    @include font-settings (16px, 26px);
+    margin-bottom: 17px;
+}
+.social__icon
+{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon_apple, .icon_android
+{
+    width: 70px;
+    height: 70px;
+    background-color: $darkerblue-color;
+    border-radius: 50%;
+    position: relative;
+  
+}
+.icon_apple:hover, .icon_android:hover
+{
+    background-color: purple;
+    transform: rotate(36000deg);
+    transition-duration: 0.5s; ;
+}
+.icon_apple:hover, .icon_android:hover .video__svg>.apple-fill
+{
+    fill: $blue-color;
+}
+
+.icon_apple:hover .video__svg
+{
+ fill: $maintext-color;
+}
+.video__svg
+{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    fill:#ffffff;
+}
+.android_icon, .apple_icon
+{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.vimeo
+{
+    margin: auto;
+}
+@media (min-width: 1200px)
+{
+    .flex-parts
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .video{
+
+        padding-bottom: 70px;
+    }
+    .desc_part
+    {
+        width: 100%;
+        padding-right: 80px;
+         padding-top: 35px;
+    }
+    .vimeo_part
+    {
+        width: 100%;
+    }
+    .vimeo{
+        width: 510px;
+        height: 310px;
+    }
+   
+}
+@media (min-width:320px) and (max-width: 1200px) 
+{
+    .flex-parts
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .video__header{
+        text-align: center;
+    }
+    .video__desc
+    {
+        text-align: center;
+    }
+    .vimeo
+    {
+        max-width: 100%;
+    }
+    .social__icon
+    {
+        margin: auto;
+    }
+.desc_part
+{
+    padding-bottom: 38px;
+padding-top: 20px   ;
+}
+.vimeo_part {
+    width: 100%;
+    padding-bottom: 60px;
+            }
+}  
+@media (max-width:320px)
+{
+    // .flex-add
+    // {
+        
+    //     flex-direction: column;
+    // }
+    .video__header{
+        text-align: center;
+    }
+    .video__desc
+    {
+        text-align: center;
+    }
+    .vimeo
+    {
+        max-width: 100%;
+    }
+    .social__icon
+    {
+        margin: auto;
+    }
+.desc_part
+{
+    padding-bottom: 38px;
+}
+.vimeo_part {
+    width: 100%;
+    padding-bottom: 60px;
+    margin: auto;
+            }
+          
+}

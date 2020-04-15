@@ -1,0 +1,20 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'reset';
+@import 'helpers/variables.scss';
+@import 'helpers/mixins.scss';
+@import 'fonts';
+@import 'base';
+@import 'titles';
+
+// SECTIONS
+
+@import 'section/header.scss';
+@import 'section/key.scss';
+@import 'section/video.scss';
+@import 'section/team.scss';
+@import 'section/slider.scss';
+@import 'section/footer.scss';
+
